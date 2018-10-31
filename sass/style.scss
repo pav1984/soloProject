@@ -1,0 +1,13 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+@import "sections/_top-menu";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $general-font;
+}
