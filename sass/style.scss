@@ -2,10 +2,11 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import "../images/fonts/Glyphter";
 @import "sections/top-menu";
 @import"sections/side-menu";
 @import "sections/main-content";
-@import "sections/Glyphter";
+
 * {
     margin: 0;
     padding: 0;
