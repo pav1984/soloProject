@@ -1,0 +1,159 @@
+//TOP MENU
+header {
+    border-bottom: 1px solid #e3e3e3;
+    height: 61px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $font-color-first;
+    margin: 0;
+    background-color: #ffffff;
+
+    @include sm {
+        display: none;
+    }
+}
+
+.btn-top {
+    display: flex;
+    height: 61px;
+    border: 1px solid #f5f5f2;
+    font-size: 20px;
+    color: #a6a6a6;
+    padding: 0 10px;
+    outline: none;
+    align-items: center;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+
+    @include sm {
+        display: none;
+    }
+
+    .icon-wallet {
+        margin: 0 10px;
+
+        &:hover {
+            color: $btnColors;
+        }
+    }
+
+    .dolars {
+        font-size: 20px;
+        font-weight: 400;
+
+        &:hover {
+            color: $btnColors;
+        }
+    }
+
+    .icon-arrow-down-small {
+        font-size: 11px;
+        margin: 0 14px;
+
+        &:hover {
+            color: $btnColors;
+        }
+    }
+
+    .icon-profile {
+        margin-right: 15px;
+
+        &:hover {
+            color: $btnColors;
+        }
+
+        @include md {
+            margin: 0;
+        }
+    }
+
+    .user {
+        color: #56819f;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 42px;
+
+        &:hover {
+            color: $btnColors;
+        }
+
+        @include md {
+            display: none;
+        }
+    }
+
+    .btn-quit {
+        padding: 0 20px;
+        border-left: none;
+        border-bottom: 1px solid #e3e3e3;
+
+        &:hover {
+            background-color: #f1f3f3;
+            ;
+            cursor: pointer;
+        }
+    }
+
+    .btn-profile {
+        padding: 0 27px;
+        border-bottom: 1px solid #e3e3e3;
+
+        &:hover {
+            background-color: #f1f3f3;
+            cursor: pointer;
+        }
+    }
+
+    .btn-noti {
+        padding: 0 18px;
+        border-right: 0;
+        position: relative;
+        border-bottom: 1px solid #e3e3e3;
+
+        &:hover {
+            background-color: #f1f3f3;
+            cursor: pointer;
+        }
+    }
+
+    .btn-wallet {
+        border-right: none;
+        padding: 0px 16px;
+        border-bottom: 1px solid #e3e3e3;
+
+        &:hover {
+            background-color: #f1f3f3;
+            ;
+            cursor: pointer;
+        }
+    }
+
+    .btn-noti .dot {
+        width: 8px;
+        height: 8px;
+        background: $btnColors;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+    }
+
+    .icon-notification {
+        &:hover {
+            color: $btnColors;
+        }
+    }
+
+    .icon-quit {
+        &:hover {
+            color: $btnColors;
+        }
+    }
+}

@@ -2,7 +2,10 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "sections/_top-menu";
+@import "sections/top-menu";
+@import"sections/side-menu";
+@import "sections/main-content";
+@import "sections/Glyphter";
 * {
     margin: 0;
     padding: 0;
@@ -10,4 +13,6 @@
 }
 body {
     font-family: $general-font;
+    background-color: $content-color;
 }
+   

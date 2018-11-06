@@ -1,0 +1,218 @@
+.side-bar {
+    width: 260px;
+    height: 100%;
+    background-color: $side-bar-color;
+    position: fixed;
+    color: $font-sidebar;
+    z-index: 2;
+
+    @include sm {
+        overflow-y: scroll;
+    }
+
+    &.side-bar-hidden {
+        margin-left: -200px;
+
+        .side-navigation {
+            .nav-side {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding-right: 5px;
+            }
+        }
+
+        +.general-statistic {
+            padding-left: 75px;
+        }
+
+        +.my-web-links {
+            padding-left: 75px;
+        }
+
+        .user-profile {
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+
+        @include sm {
+            .btn-top-side {
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                background: $side-bar-color;
+                border: none;
+                padding: 18px;
+                color: $font-sidebar;
+                outline: none;
+
+                &:hover {
+                    background-color: $side-bar-hover;
+                    color: #fff;
+                }
+            }
+        }
+
+        .side-bar-user {
+            .online-side-bar {
+                padding: 0px 8px 15px 0;
+
+                h3 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.header-sidebar {
+    display: flex;
+    justify-content: space-around;
+
+    .logo {
+        padding: 23px 0;
+    }
+
+    .hamburger {
+        padding: 23px 0;
+        font-size: 23px;
+        color: $side-bar-font-color;
+
+        .fas {
+            margin-left: 75px;
+
+            &:hover {
+                color: $btnColors;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.side-navigation {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+    a {
+        text-decoration: none;
+
+        .nav-side {
+            padding: 15px;
+            color: $side-bar-font-color;
+            font-size: 17px;
+            font-weight: 300;
+
+            &:hover {
+                color: #fff;
+                background-color: $side-bar-hover;
+                border-left: 5px solid $btnColors;
+                cursor: pointer;
+            }
+
+            .side-icons-bar {
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.side-bar-user {
+    border-top: 1px solid #fff;
+    position: relative;
+
+    h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 30px;
+    }
+
+    .online-side-bar {
+        text-align: center;
+        margin-top: 20px;
+
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .user-profile {
+            display: flex;
+            color: #56819f;
+            align-items: center;
+            padding-left: 10px;
+
+            &:hover {
+                color: #fff;
+                background-color: $side-bar-hover;
+                border-left: 5px solid $btnColors;
+                cursor: pointer;
+            }
+
+            p {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+.top-menu-side {
+    display: none;
+
+    @include sm {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.side-bar .btn-top-side {
+    display: flex;
+    background: black;
+    color: white;
+    height: 61px;
+    align-items: center;
+    border: none;
+    padding: 15px;
+    color: #999999;
+    font-size: 17px;
+    font-weight: 300;
+    outline: none;
+
+    .btn-position {
+        padding-left: 15px;
+    }
+
+    .user {
+        color: $top-bar-name-color;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: $side-bar-hover;
+        border-left: 5px solid $btnColors;
+        cursor: pointer;
+    }
+}
+
+.side-bar .green-dot {
+    width: 8px;
+    height: 8px;
+    background: #04ae00;
+    position: absolute;
+    top: 76px;
+    left: 42px;
+    border-radius: 50%;
+}
+
+.side-bar-hidden .green-dot {
+    width: 8px;
+    height: 8px;
+    background: #04ae00;
+    position: absolute;
+    top: 75px;
+    left: 238px;
+    border-radius: 50%;
+}
