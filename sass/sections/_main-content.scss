@@ -1,18 +1,20 @@
 .general-statistic {
-    padding: 75px 30px 30px 270px;
+    padding: 75px 30px 30px 230px;
     max-width: 100%;
-
-    @include sm {
-        padding-left: 70px;
-    }
 
     @include md {
         padding-left: 50px;
+    }
+    @include sm {
+        padding-top: 70px;
     }
 
     .main {
         background-color: #ffffff;
         box-shadow: 0 0 5px gray;
+        @include sm {
+            box-shadow: none;
+        }
 
         .general {
             padding: 10px;
@@ -23,9 +25,12 @@
                 color: $font-color-first;
                 text-transform: uppercase;
                 font-weight: 400;
+                @include sm {
+                    text-align: center;
+                }
             }
         }
-
+//CALENDAR
         .calendar {
             padding: 41px;
             text-align: center;
@@ -129,21 +134,30 @@
                 padding: 20px;
             }
         }
-
+//STATS
         .stats {
             display: flex;
             padding-top: 40px;
             justify-content: center;
         }
+        .row-stats {
+            @include lg {
+                width: 100%;
+                justify-content: center;
+            }
 
         .col-stats {
-            padding: 0 35px;
-
+            margin: 0 20px;
+            display: flex;
+            justify-content: center;
             @include sm {
                 padding: 0;
             }
         }
-
+        table {
+            max-width: 100%;
+            width: 100%;
+        }
         .data-stats {
             border-bottom: 1px solid #e3e3e3;
             font-weight: 600;
@@ -166,11 +180,6 @@
         }
 
         .data-stats-second {
-            border-bottom: 1px solid #e3e3e3;
-            font-weight: 600;
-            color: $font-color-first;
-            font-size: 16px;
-            line-height: 2;
             padding-right: 179px;
 
             @include lg {
@@ -203,23 +212,8 @@
                 padding-left: 0;
             }
         }
-
-        .row-stats {
-            @include lg {
-                width: 100%;
-                justify-content: center;
-                display: inline-grid;
-            }
-
-            @include md {
-                display: inline-grid;
-            }
-
-            @include sm {
-                overflow: hidden;
-            }
-        }
-
+}
+//CHART
         .chart {
             padding-top: 80px;
 
@@ -312,21 +306,26 @@
             .chart-view {
                 text-align: center;
                 margin-top: 70px;
+                display: block;
+                width: 100%;
+                overflow-x: auto;
 
                 img {
-                    max-width: 100%;
-                    height: auto;
+                    width: auto;
                     margin-bottom: 40px;
                 }
             }
         }
     }
 }
-
+//LINKS
 .my-web-links {
     margin-top: 20px;
+    @include sm {
+        margin-top: -10px;
+    }
 
-    h2 {
+    h1 {
         font-size: 16px;
         color: #a6a6a6;
         text-transform: uppercase;
@@ -334,6 +333,9 @@
         height: 45px;
         border-bottom: 1px solid #e3e3e3;
         padding: 12px 15px;
+        @include sm {
+            text-align: center;
+        }
     }
 
     .add-link {
@@ -453,7 +455,6 @@
             padding: 10px;
         }
     }
-
     .icon-links {
         &:hover {
             color: $btnColors;

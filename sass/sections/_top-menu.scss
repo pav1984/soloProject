@@ -26,6 +26,7 @@ header {
     padding: 0 10px;
     outline: none;
     align-items: center;
+    background-color: #ffffff;
 }
 
 .top-menu {
@@ -93,10 +94,10 @@ header {
         padding: 0 20px;
         border-left: none;
         border-bottom: 1px solid #e3e3e3;
+         background-color: #ffffff;
 
         &:hover {
             background-color: #f1f3f3;
-            ;
             cursor: pointer;
         }
     }
@@ -104,6 +105,7 @@ header {
     .btn-profile {
         padding: 0 27px;
         border-bottom: 1px solid #e3e3e3;
+        background-color: #ffffff;
 
         &:hover {
             background-color: #f1f3f3;
@@ -116,6 +118,7 @@ header {
         border-right: 0;
         position: relative;
         border-bottom: 1px solid #e3e3e3;
+        background-color: #ffffff;
 
         &:hover {
             background-color: #f1f3f3;
@@ -127,10 +130,10 @@ header {
         border-right: none;
         padding: 0px 16px;
         border-bottom: 1px solid #e3e3e3;
+        background-color: #ffffff;
 
         &:hover {
             background-color: #f1f3f3;
-            ;
             cursor: pointer;
         }
     }

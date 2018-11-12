@@ -2,10 +2,10 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "../images/fonts/Glyphter";
 @import "sections/top-menu";
 @import"sections/side-menu";
 @import "sections/main-content";
+@import "../images/fonts/Glyphter";
 
 * {
     margin: 0;
