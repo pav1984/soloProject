@@ -393,12 +393,16 @@
             width: 100%;
         }
 
-        &:hover {
+        &:hover  {
             background-color: #f1f3f3;
-
-            ~.icon-links {
-                color: $btnColors;
+            .icon-links {
+                opacity: 1;
+                 color: $btnColors;
             }
+             .icon-trash {
+                 opacity: 1;
+             }
+            
         }
     }
 
@@ -440,10 +444,7 @@
 
     .icon-trash {
         padding: 0 20px;
-
-        &:hover {
-            color: $btnColors;
-        }
+        opacity: 0;
     }
 
     .link-web {
@@ -453,11 +454,11 @@
 
         @include md {
             padding: 10px;
+            opacity: 0;
         }
     }
     .icon-links {
-        &:hover {
-            color: $btnColors;
-        }
+        opacity: 0;
+       
     }
 }

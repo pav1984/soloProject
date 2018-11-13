@@ -237,6 +237,7 @@
     visibility: hidden;
     .hamburger {
         visibility: visible;
+        padding: 10px 0;
         @include sm {
             padding: 10px 0;
         }
