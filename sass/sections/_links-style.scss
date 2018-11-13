@@ -1,0 +1,16 @@
+.side-bar.side-bar-hidden+.my-web-links {
+    margin: 0 auto;
+    padding-left: 30px;
+    @include sm{
+    padding: 0;
+    }
+}
+
+.side-bar-hidden {
+    .hamburger {
+        @include sm {
+            padding: 0;
+        }
+
+    }
+}
