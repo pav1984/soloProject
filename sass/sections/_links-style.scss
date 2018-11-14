@@ -9,8 +9,13 @@
 .side-bar-hidden {
     .hamburger {
         @include sm {
-            padding: 0;
+            padding: 5px;
         }
 
+    }
+}
+.my-web-links h1 {
+    @include sm {
+        margin: 0 auto;
     }
 }
