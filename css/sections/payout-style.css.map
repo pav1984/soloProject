@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "payout-style.css",
+	"sources": [
+		"../../sass/sections/payout-style.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

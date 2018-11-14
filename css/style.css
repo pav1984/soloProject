@@ -933,6 +933,13 @@ header {
 
 .side-navigation a {
   text-decoration: none;
+  color: #999999;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.side-navigation a:hover {
+  color: #ffffff;
 }
 
 .side-bar-second-part .side-bar-user {
@@ -1719,7 +1726,7 @@ header {
   font-weight: 300;
   font-size: 15px;
   border: 1px solid #a6a6a6;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
