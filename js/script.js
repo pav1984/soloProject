@@ -6,3 +6,15 @@ document.querySelector('.hamburger').addEventListener('click', function (e) {
     e.preventDefault();
     toggleMenu()
 });
+
+document.getElementById('btnLogin').addEventListener('click', function() {
+      document.querySelector('.bg-modal').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener('click', function (){
+     document.querySelector('.bg-modal').style.display = "none";
+});
+
+document.getElementById('btnSide').addEventListener('click', function () {
+    document.querySelector('.bg-modal').style.display = "flex";
+});
