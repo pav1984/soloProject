@@ -7,13 +7,15 @@
     z-index: 2;
     overflow-y: auto;
     transition: .5s;
+
     @include sm {
         width: 100%;
     }
-    
+
 
     &.side-bar-hidden {
         margin-left: -155px;
+
         @include sm {
             margin-left: -73%;
         }
@@ -29,6 +31,7 @@
 
         +.general-statistic {
             padding-left: 30px;
+
             @include sm {
                 padding: 0;
             }
@@ -115,6 +118,10 @@
                 background-color: $side-bar-hover;
                 border-left: 5px solid $btnColors;
                 cursor: pointer;
+
+                a {
+                    color: #ffffff;
+                }
             }
 
             .side-icons-bar {
@@ -122,61 +129,61 @@
             }
         }
     }
+
     a {
         text-decoration: none;
-            color: $side-bar-font-color;
-            font-size: 20px;
-            font-weight: 300;
-            &:hover {
-                color: #ffffff;
-            }
+        color: $side-bar-font-color;
+        font-size: 20px;
+        font-weight: 300;
     }
 }
+
 .side-bar-second-part {
 
-.side-bar-user {
-    border-top: 1px solid #fff;
-    position: relative;
+    .side-bar-user {
+        border-top: 1px solid #fff;
+        position: relative;
 
-    h1 {
-        font-size: 17px;
-        font-weight: 400;
-        margin: 30px;
-    }
-
-    .online-side-bar {
-        text-align: center;
-        margin-top: 20px;
-
-        &:hover {
-            cursor: pointer;
-            color: #fff;
+        h1 {
+            font-size: 17px;
+            font-weight: 400;
+            margin: 30px;
         }
 
-        .user-profile {
-            display: flex;
-            color: #56819f;
-            align-items: center;
-            padding-left: 10px;
-            height: 61px;
+        .online-side-bar {
+            text-align: center;
+            margin-top: 20px;
 
             &:hover {
-                color: #fff;
-                background-color: $side-bar-hover;
-                border-left: 5px solid $btnColors;
                 cursor: pointer;
+                color: #fff;
             }
 
-            h2 {
-                padding-left: 15px;
-                font-size: 16px;
-                font-weight: 300;
+            .user-profile {
+                display: flex;
+                color: #56819f;
+                align-items: center;
+                padding-left: 10px;
+                height: 61px;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $side-bar-hover;
+                    border-left: 5px solid $btnColors;
+                    cursor: pointer;
+                }
+
+                h2 {
+                    padding-left: 15px;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
             }
         }
     }
-}
 
 }
+
 .top-menu-side {
     display: none;
 
@@ -238,18 +245,22 @@
     left: 238px;
     border-radius: 50%;
 }
+
 .side-bar-hidden .side-bar-user h1 {
     margin: 0 auto;
 }
 
 .side-bar-hidden {
     visibility: hidden;
+
     .hamburger {
         visibility: visible;
         padding: 10px 0;
+
         @include sm {
             padding: 13px 0;
         }
+
         .fa-bars {
             font-size: 35px;
         }

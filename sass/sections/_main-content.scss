@@ -5,6 +5,7 @@
     @include md {
         padding-left: 50px;
     }
+
     @include sm {
         padding-top: 70px;
     }
@@ -12,6 +13,7 @@
     .main {
         background-color: #ffffff;
         box-shadow: 0 0 5px gray;
+
         @include sm {
             box-shadow: none;
         }
@@ -25,12 +27,14 @@
                 color: $font-color-first;
                 text-transform: uppercase;
                 font-weight: 400;
+
                 @include sm {
                     text-align: center;
                 }
             }
         }
-//CALENDAR
+
+        //CALENDAR
         .calendar {
             padding: 41px;
             text-align: center;
@@ -64,6 +68,7 @@
                     border-radius: 2px;
                     position: relative;
                     padding: 0 30px;
+
                     @include md {
                         line-height: 3;
                     }
@@ -82,6 +87,7 @@
                 color: #e3e3e3;
                 font-size: 24px;
                 font-weight: 300;
+
                 @include md {
                     display: none;
                 }
@@ -96,8 +102,9 @@
             color: #9c9c9c;
             font-size: 14px;
             position: absolute;
-            top:10px;
+            top: 10px;
             right: 3px;
+
             @include md {
                 top: 2px;
 
@@ -134,86 +141,92 @@
                 padding: 20px;
             }
         }
-//STATS
+
+        //STATS
         .stats {
             display: flex;
             padding-top: 40px;
             justify-content: center;
         }
+
         .row-stats {
             @include lg {
                 width: 100%;
                 justify-content: center;
             }
 
-        .col-stats {
-            margin: 0 20px;
-            display: flex;
-            justify-content: center;
-            @include sm {
-                padding: 0;
+            .col-stats {
+                margin: 0 20px;
+                display: flex;
+                justify-content: center;
+
+                @include sm {
+                    padding: 0;
+                }
+            }
+
+            table {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .data-stats {
+                border-bottom: 1px solid #e3e3e3;
+                font-weight: 600;
+                color: $font-color-first;
+                font-size: 16px;
+                line-height: 2;
+                padding-right: 174px;
+
+                @include lg {
+                    padding-right: 232px;
+                }
+
+                @include md {
+                    padding-right: 214px;
+                }
+
+                @include sm {
+                    padding-right: 78px;
+                }
+            }
+
+            .data-stats-second {
+                padding-right: 179px;
+
+                @include lg {
+                    padding-right: 237px;
+                }
+
+                @include md {
+                    padding-right: 219px;
+                }
+
+                @include sm {
+                    padding-right: 83px;
+                }
+            }
+
+            .number-stats {
+                border-bottom: 1px solid #e3e3e3;
+                font-weight: 300;
+                font-size: 16px;
+
+                @include lg {
+                    padding-left: 38px;
+                }
+
+                @include md {
+                    padding-left: 60px;
+                }
+
+                @include sm {
+                    padding-left: 0;
+                }
             }
         }
-        table {
-            max-width: 100%;
-            width: 100%;
-        }
-        .data-stats {
-            border-bottom: 1px solid #e3e3e3;
-            font-weight: 600;
-            color: $font-color-first;
-            font-size: 16px;
-            line-height: 2;
-            padding-right: 174px;
 
-            @include lg {
-                padding-right: 232px;
-            }
-
-            @include md {
-                padding-right: 214px;
-            }
-
-            @include sm {
-                padding-right: 78px;
-            }
-        }
-
-        .data-stats-second {
-            padding-right: 179px;
-
-            @include lg {
-                padding-right: 237px;
-            }
-
-            @include md {
-                padding-right: 219px;
-            }
-
-            @include sm {
-                padding-right: 83px;
-            }
-        }
-
-        .number-stats {
-            border-bottom: 1px solid #e3e3e3;
-            font-weight: 300;
-            font-size: 16px;
-
-            @include lg {
-                padding-left: 38px;
-            }
-
-            @include md {
-                padding-left: 60px;
-            }
-
-            @include sm {
-                padding-left: 0;
-            }
-        }
-}
-//CHART
+        //CHART
         .chart {
             padding-top: 80px;
 
@@ -318,9 +331,11 @@
         }
     }
 }
+
 //LINKS
 .my-web-links {
     margin-top: 20px;
+
     @include sm {
         margin-top: -10px;
     }
@@ -333,6 +348,7 @@
         height: 45px;
         border-bottom: 1px solid #e3e3e3;
         padding: 12px 15px;
+
         @include sm {
             text-align: center;
         }
@@ -393,17 +409,19 @@
             width: 100%;
         }
 
-        &:hover  {
+        &:hover {
             background-color: #f1f3f3;
             cursor: pointer;
+
             .icon-links {
                 opacity: 1;
-                 color: $btnColors;
+                color: $btnColors;
             }
-             .icon-trash {
-                 opacity: 1;
-             }
-            
+
+            .icon-trash {
+                opacity: 1;
+            }
+
         }
     }
 
@@ -457,8 +475,9 @@
             padding: 10px;
         }
     }
+
     .icon-links {
         opacity: 0;
-       
+
     }
 }

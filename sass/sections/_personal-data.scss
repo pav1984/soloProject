@@ -3,112 +3,126 @@
     .main {
         box-shadow: none;
     }
+
     h1 {
         margin: 0 auto;
     }
+
     .container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
     }
+
     form {
-            max-width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            margin: 5% auto;
-            @include md {
-                width: 100%;
-            }
-            @include sm {
-                width: 100%;
-            }
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto;
+
+        @include md {
+            width: 100%;
+        }
+
+        @include sm {
+            width: 100%;
+        }
     }
+
     label {
-            color: #a6a6a6;
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 2.5;
-            width: 180px;
-            float: left;
-            @include md {
-                float: none;
-                display: block;
-            }
-            
+        color: #a6a6a6;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2.5;
+        width: 180px;
+        float: left;
+
+        @include md {
+            float: none;
+            display: block;
+        }
+
     }
+
     .mr {
         margin: 15px;
     }
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-      float: left;
-      height: 35px;
-      width: 290px;
-      padding: 15px 18px;
-      font-weight: 300;
-      font-size: 15px;
-      border: 1px solid #a6a6a6;
-      border-radius: 5px;
-     @include md {
-         display: block;
-         width: 80%;
-         @include sm {
-         width: 100%;
-         font-size: 13px;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        float: left;
+        height: 35px;
+        width: 290px;
+        padding: 15px 18px;
+        font-weight: 300;
+        font-size: 15px;
+        border: 1px solid #a6a6a6;
+        border-radius: 5px;
+
+        @include md {
+            display: block;
+            width: 80%;
+
+            @include sm {
+                width: 100%;
+                font-size: 13px;
+            }
         }
-     }
-  }
-   .border {
-       border-bottom: 1px solid #E3E3E3;
-       position: absolute;
-       width: 100%;
-       top: 36%;
+    }
 
-       @include md {
-           top: 38%;
-       }
-   }
+    .border {
+        border-bottom: 1px solid #E3E3E3;
+        position: absolute;
+        width: 100%;
+        top: 36%;
 
-   .border-md {
-       border-bottom: 1px solid #E3E3E3;
-       position: absolute;
-       width: 100%;
-       top: 64%;
+        @include md {
+            top: 38%;
+        }
+    }
 
-       @include md {
-           top: 67%;
-       }
-   }
-   .border-last {
-       border-bottom: 1px solid #E3E3E3;
-       position: absolute;
-       width: 100%;
-       top: 77%;
+    .border-md {
+        border-bottom: 1px solid #E3E3E3;
+        position: absolute;
+        width: 100%;
+        top: 64%;
 
-       @include md {
-           top: 80%;
-       }
-   }
-   .skype-div {
-       margin-top: 80px;
-   }
+        @include md {
+            top: 67%;
+        }
+    }
 
-   .wallet-div {
-       margin-top: 80px;
-   }
+    .border-last {
+        border-bottom: 1px solid #E3E3E3;
+        position: absolute;
+        width: 100%;
+        top: 77%;
 
-   .password-div {
-       margin-top: 80px;
-   }
+        @include md {
+            top: 80%;
+        }
+    }
 
-   .border-bt {
-       border-bottom: 1px solid #E3E3E3;
-   }
-   .add-link {
-       padding: 30px;
-   }
+    .skype-div {
+        margin-top: 80px;
+    }
+
+    .wallet-div {
+        margin-top: 80px;
+    }
+
+    .password-div {
+        margin-top: 80px;
+    }
+
+    .border-bt {
+        border-bottom: 1px solid #E3E3E3;
+    }
+
+    .add-link {
+        padding: 30px;
+    }
 }
-

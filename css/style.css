@@ -927,6 +927,10 @@ header {
   cursor: pointer;
 }
 
+.side-navigation ul li:hover a {
+  color: #ffffff;
+}
+
 .side-navigation ul li .side-icons-bar {
   padding-right: 15px;
 }
@@ -936,10 +940,6 @@ header {
   color: #999999;
   font-size: 20px;
   font-weight: 300;
-}
-
-.side-navigation a:hover {
-  color: #ffffff;
 }
 
 .side-bar-second-part .side-bar-user {

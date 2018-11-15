@@ -6,14 +6,15 @@
         padding: 0;
     }
 }
+
 .side-bar-hidden {
     .hamburger {
         @include sm {
             padding: 5px;
         }
-
     }
 }
-.banners h1{
+
+.banners h1 {
     margin: 0 auto;
 }
