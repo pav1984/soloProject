@@ -18,3 +18,11 @@ document.querySelector('.close').addEventListener('click', function (){
 document.getElementById('btnSide').addEventListener('click', function () {
     document.querySelector('.bg-modal').style.display = "flex";
 });
+
+document.getElementById('chatPop').addEventListener('click', function () {
+    document.querySelector('.chat-modual').style.display = "flex";
+});
+
+document.querySelector('.close-msg').addEventListener('click', function () {
+    document.querySelector('.chat-modual').style.display = "none";
+});

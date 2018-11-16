@@ -33,7 +33,6 @@
         </section>
     </header>
     <!--POP UP styles inside top-menu.scss-->
-
     <div class="bg-modal">
         <div class="modal-content">
             <div class="close">+</div>
@@ -43,6 +42,37 @@
                 <input class="font-icons" type="password" id="password" name="password" placeholder="&#xf084&nbsp;&nbsp;&nbsp;password">
                 <button type="submit">Enter</button>
             </form>
+        </div>
+    </div>
+    <!--MESSAGE POP-UP-->
+    <div class="chat-modual">
+        <div class="chat-content">
+            <div class="close close-msg">+</div>
+            <h1>online chat with your personal manager</h1>
+            <div class="content-online">
+                <img src="images/user.png" alt="user-online">
+                <div class="flex-position">
+                    <h2>Michael E.</h2>
+                    <button class="btn-online">online</button>
+                </div>
+            </div>
+            <div class="message">
+                <div class="my-message">
+                    Hello. Can I help you?
+                </div>
+                <div class="other-message">
+                    Hello! I would like to know about Postback
+                </div>
+                <div class="my-message last-message">
+                    Ok. 5min..
+                </div>
+            </div>
+            <div class="enter-message">
+                <label class="icon-message" for="entmessage"></label>
+                <input type="text" id="entmessage" name="entmessage" placeholder="Enter the message..">
+                <button class="send-btn" type="submit">Send</button>
+            </div>
+
         </div>
     </div>
     <!--SIDEBAR-->
@@ -70,7 +100,7 @@
         <section class="side-bar-second-part">
             <div class="side-bar-user">
                 <h1>YOUR MANAGER</h1>
-                <div class="online-side-bar">
+                <div id="chatPop" class="online-side-bar">
                     <span class="green-dot"></span>
                     <div class="user-profile"><img src="images/user.png" alt="user">
                         <h2> Mikhael E.</h2>
@@ -97,7 +127,6 @@
             </div>
         </section>
     </section>
-
     <!--GENERAL STATS-->
     <section class="general-statistic">
         <div class="main">
