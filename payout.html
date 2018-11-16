@@ -23,7 +23,7 @@
             </button>
             <button class="btn-top btn-noti">
                 <span class="icon-notification"></span><span class="dot"></span></button>
-            <button class="btn-top btn-profile">
+            <button id="btnLogin" class="btn-top btn-profile">
                 <span class="icon-profile"></span>
                 <span class="user">Leonardo Dicaprio</span>
             </button>
@@ -32,6 +32,18 @@
             </button>
         </section>
     </header>
+    <!--POP UP styles inside top-menu.scss-->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <h1>Login</h1>
+            <form action="#">
+                <input class="font-icons" type="text" id="fname" name="firstname" placeholder="&#xf007&nbsp;&nbsp;&nbsp;login name">
+                <input class="font-icons" type="password" id="password" name="password" placeholder="&#xf084&nbsp;&nbsp;&nbsp;password">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
     <!--SIDEBAR-->
     <section class="side-bar side-bar-hidden">
         <div class="header-sidebar">
@@ -73,7 +85,7 @@
                     <span class="icon-notification"></span>
                     <span class="btn-position">Notification</span>
                 </button>
-                <button class="btn-top-side">
+                <button id="btnSide" class="btn-top-side">
                     <span class="icon-profile"></span>
                     <span class="user btn-position">Leonardo Dicaprio</span>
                 </button>
