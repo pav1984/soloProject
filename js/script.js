@@ -26,3 +26,18 @@ document.getElementById('chatPop').addEventListener('click', function () {
 document.querySelector('.close-msg').addEventListener('click', function () {
     document.querySelector('.chat-modual').style.display = "none";
 });
+
+document.getElementById('quitBtn').addEventListener('click', function () {
+    document.querySelector('.quit-modual').style.display = "flex";
+});
+document.querySelector('.cross-btn').addEventListener('click', function () {
+    document.querySelector('.quit-modual').style.display = "none";
+});
+
+document.querySelector('.cancel-btn').addEventListener('click', function () {
+    document.querySelector('.quit-modual').style.display = "none";
+});
+
+document.getElementById('side-quit').addEventListener('click', function () {
+    document.querySelector('.quit-modual').style.display = "flex";
+});

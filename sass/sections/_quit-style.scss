@@ -1,0 +1,88 @@
+.quit-modual {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-top: 10%;
+    z-index: 11;
+    display: none;
+
+    .quit-content {
+        width: 360px;
+        height: 160px;
+        background-color: #ffffff;
+        position: relative;
+
+        @include sm {
+            width: 90%;
+        }
+
+        .cross-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: $font-color-first;
+            font-size: 30px;
+            font-weight: 300;
+            transform: rotate(45deg);
+            cursor: pointer;
+
+            &:hover {
+                color: $btnColors;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 17px;
+        color: $font-color-first;
+        font-family: $general-font;
+        margin: 0 auto;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 27px;
+        font-weight: 400;
+    }
+
+    .btn-remote {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 10px;
+
+        .cancel-btn {
+            background-color: #979797;
+            margin-right: 5px;
+            color: #ffffff;
+            font-weight: 300;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            padding: 9px 20px;
+            font-size: 19px;
+
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+
+        .btn-quit {
+            background-color: $btnColors;
+            color: #ffffff;
+            font-weight: 300;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            padding: 9px 32px;
+            font-size: 19px;
+
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+    }
+}

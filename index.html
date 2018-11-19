@@ -27,7 +27,7 @@
                 <span class="icon-profile"></span>
                 <span class="user">Leonardo Dicaprio</span>
             </button>
-            <button class="btn-top btn-quit">
+            <button id="quitBtn" class="btn-top btn-quit">
                 <span class="icon-quit"></span>
             </button>
         </section>
@@ -46,7 +46,7 @@
             </form>
         </div>
     </div>
-    <!--MESSAGE POP-UP styles inside top-menu.scss-->
+    <!--MESSAGE POP-UP styles inside side-menu.scss-->
     <div class="chat-modual">
         <div class="chat-content">
             <div class="close close-msg">+</div>
@@ -75,6 +75,17 @@
                 <button class="send-btn" type="submit">Send</button>
             </div>
 
+        </div>
+    </div>
+    <!--QUIT POP-UP-->
+    <div class="quit-modual">
+        <div class="quit-content">
+            <div class="close cross-btn">+</div>
+            <h1>Do you really want to Quit?</h1>
+            <div class="btn-remote">
+                <button type="submit" class="cancel-btn">Cancel</button>
+                <button type="submit" class="btn-quit">Quit</button>
+            </div>
         </div>
     </div>
     <!--SIDEBAR-->
@@ -122,7 +133,7 @@
                     <span class="icon-profile"></span>
                     <span class="user btn-position">Leonardo Dicaprio</span>
                 </button>
-                <button class="btn-top-side">
+                <button id="side-quit" class="btn-top-side">
                     <span class="icon-quit"></span>
                     <span class="btn-position">Quit</span>
                 </button>

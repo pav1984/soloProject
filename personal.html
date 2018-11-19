@@ -27,56 +27,66 @@
                 <span class="icon-profile"></span>
                 <span class="user">Leonardo Dicaprio</span>
             </button>
-            <button class="btn-top btn-quit">
+            <button id="quitBtn" class="btn-top btn-quit">
                 <span class="icon-quit"></span>
             </button>
         </section>
     </header>
     <!--POP UP styles inside top-menu.scss-->
-<div class="bg-modal">
-    <div class="modal-content">
-        <div class="close">+</div>
-        <h1>Login</h1>
-        <form action="#">
-            <label class="icon-login font-icons" for="fname"></label>
-            <input type="text" id="fname" name="firstname" placeholder="login name">
-            <label class="icon-password font-icons" for="password"></label>
-            <input type="password" id="password" name="password" placeholder="password">
-            <button type="submit">Enter</button>
-        </form>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <h1>Login</h1>
+            <form action="#">
+                <label class="icon-login font-icons" for="fname"></label>
+                <input type="text" id="fname" name="firstname" placeholder="login name">
+                <label class="icon-password font-icons" for="password"></label>
+                <input type="password" id="password" name="password" placeholder="password">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
     </div>
-</div>
-<!--MESSAGE POP-UP styles inside top-menu.scss-->
-<div class="chat-modual">
-    <div class="chat-content">
-        <div class="close close-msg">+</div>
-        <h1>online chat with your personal manager</h1>
-        <div class="content-online">
-            <img src="images/user.png" alt="user-online">
-            <div class="flex-position">
-                <h2>Michael E.</h2>
-                <button class="btn-online">online</button>
+    <!--MESSAGE POP-UP styles inside top-menu.scss-->
+    <div class="chat-modual">
+        <div class="chat-content">
+            <div class="close close-msg">+</div>
+            <h1>online chat with your personal manager</h1>
+            <div class="content-online">
+                <img src="images/user.png" alt="user-online">
+                <div class="flex-position">
+                    <h2>Michael E.</h2>
+                    <button class="btn-online">online</button>
+                </div>
+            </div>
+            <div class="message">
+                <div class="my-message">
+                    Hello. Can I help you?
+                </div>
+                <div class="other-message">
+                    Hello! I would like to know about Postback
+                </div>
+                <div class="my-message last-message">
+                    Ok. 5min..
+                </div>
+            </div>
+            <div class="enter-message">
+                <label class="icon-message" for="entmessage"></label>
+                <input type="text" id="entmessage" name="entmessage" placeholder="Enter the message..">
+                <button class="send-btn" type="submit">Send</button>
             </div>
         </div>
-        <div class="message">
-            <div class="my-message">
-                Hello. Can I help you?
-            </div>
-            <div class="other-message">
-                Hello! I would like to know about Postback
-            </div>
-            <div class="my-message last-message">
-                Ok. 5min..
-            </div>
-        </div>
-        <div class="enter-message">
-            <label class="icon-message" for="entmessage"></label>
-            <input type="text" id="entmessage" name="entmessage" placeholder="Enter the message..">
-            <button class="send-btn" type="submit">Send</button>
-        </div>
-
     </div>
-</div>
+    <!--QUIT POP-UP-->
+    <div class="quit-modual">
+        <div class="quit-content">
+            <div class="close cross-btn">+</div>
+            <h1>Do you really want to Quit?</h1>
+            <div class="btn-remote">
+                <button type="submit" class="cancel-btn">Cancel</button>
+                <button type="submit" class="btn-quit">Quit</button>
+            </div>
+        </div>
+    </div>
     <!--SIDEBAR-->
     <section class="side-bar side-bar-hidden">
         <div class="header-sidebar">
@@ -122,7 +132,7 @@
                     <span class="icon-profile"></span>
                     <span class="user btn-position">Leonardo Dicaprio</span>
                 </button>
-                <button class="btn-top-side">
+                <button id="side-quit" class="btn-top-side">
                     <span class="icon-quit"></span>
                     <span class="btn-position">Quit</span>
                 </button>
