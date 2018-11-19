@@ -822,6 +822,18 @@ header {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .bg-modal .modal-content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-modal .modal-content {
+    width: 280px;
+  }
+}
+
 .bg-modal .modal-content h1 {
   font-size: 16px;
   color: #a6a6a6;
@@ -836,9 +848,10 @@ header {
 .bg-modal .modal-content form {
   text-align: center;
   margin-top: 50px;
+  position: relative;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .bg-modal .modal-content form {
     margin: 0 auto;
   }
@@ -846,15 +859,21 @@ header {
 
 .bg-modal .modal-content form input[type="text"],
 .bg-modal .modal-content form input[type="password"] {
-  padding: 9px 20px;
-  color: #a6a6a6;
+  padding: 9px 40px;
+  color: #000000;
   margin: 0 10px;
   border: none;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
+  font-weight: 300;
 }
 
-@media (max-width: 576px) {
+.bg-modal .modal-content form input[type="text"] ::placeholder,
+.bg-modal .modal-content form input[type="password"] ::placeholder {
+  color: #a6a6a6;
+}
+
+@media (max-width: 768px) {
   .bg-modal .modal-content form input[type="text"],
   .bg-modal .modal-content form input[type="password"] {
     display: block;
@@ -872,7 +891,7 @@ header {
   font-weight: 300;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .bg-modal .modal-content form button {
     display: block;
     margin: 5px auto;
@@ -882,6 +901,48 @@ header {
 .bg-modal .modal-content form button:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+.bg-modal .modal-content form .font-icons {
+  color: #a6a6a6;
+  font-weight: 300;
+  font-size: 20px;
+  position: absolute;
+}
+
+.bg-modal .modal-content form .icon-login {
+  left: 42px;
+  top: 7px;
+}
+
+@media (max-width: 768px) {
+  .bg-modal .modal-content form .icon-login {
+    left: 132px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-modal .modal-content form .icon-login {
+    left: 22px;
+  }
+}
+
+.bg-modal .modal-content form .icon-password {
+  left: 312px;
+  top: 9px;
+}
+
+@media (max-width: 768px) {
+  .bg-modal .modal-content form .icon-password {
+    left: 132px;
+    top: 52px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-modal .modal-content form .icon-password {
+    left: 22px;
+  }
 }
 
 .bg-modal .close {
@@ -897,11 +958,6 @@ header {
 
 .bg-modal .close:hover {
   color: #f58220;
-}
-
-.font-icons {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: bold;
 }
 
 .side-bar {
@@ -1254,7 +1310,7 @@ header {
 
 @media (max-width: 576px) {
   .chat-modual .content-online {
-    margin: 10px auto;
+    margin: 10px 20px;
   }
 }
 
@@ -2207,47 +2263,79 @@ body {
   border-collapse: collapse;
 }
 
+@media (max-width: 992px) {
+  .detalis-content table {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .detalis-content table {
+    width: 100%;
+  }
+}
+
 .detalis-content table .icon-arrow-up-small {
   font-size: 10px;
   padding: 0 6px;
   opacity: 0;
 }
 
-.detalis-content table tr {
-  border-bottom: 1px solid #E3E3E3;
+@media (max-width: 992px) {
+  .detalis-content table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 }
 
-.detalis-content table tr:not(:first-child):hover {
-  background-color: #F1F3F3;
-  cursor: pointer;
-}
-
-.detalis-content table th {
+.detalis-content table thead th {
   font-size: 14px;
   color: #A6A6A6;
   white-space: nowrap;
   text-align: left;
   padding: 17px;
+  border-bottom: 1px solid #E3E3E3;
 }
 
-.detalis-content table th:hover {
+.detalis-content table thead th:hover {
   background-color: #F1F3F3;
   cursor: pointer;
   color: #000000;
 }
 
-.detalis-content table th:hover .icon-arrow-up-small {
+.detalis-content table thead th:hover .icon-arrow-up-small {
   opacity: 1;
   color: #A6A6A6;
 }
 
 @media (max-width: 992px) {
-  .detalis-content table th {
+  .detalis-content table thead th {
     padding: 14px;
+    display: block;
+    width: 100%;
   }
 }
 
-.detalis-content table td {
+.detalis-content table tbody tr {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+@media (max-width: 992px) {
+  .detalis-content table tbody tr {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #000000;
+  }
+}
+
+.detalis-content table tbody tr:hover {
+  background-color: #F1F3F3;
+  cursor: pointer;
+}
+
+.detalis-content table tbody td {
   font-size: 15px;
   white-space: nowrap;
   font-weight: 300;
@@ -2256,8 +2344,143 @@ body {
 }
 
 @media (max-width: 992px) {
-  .detalis-content table td {
-    padding: 14px;
+  .detalis-content table tbody td {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #E3E3E3;
+    position: relative;
+    padding-left: 45%;
+  }
+  .detalis-content table tbody td:first-of-type::before {
+    content: "Tracker name:";
+    font-size: 14px;
+    color: #A6A6A6;
+    font-weight: bold;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(2n)::before {
+    content: "Initiated date:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(3n)::before {
+    content: "Visits:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(4n)::before {
+    content: "Unique:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(5n)::before {
+    content: "Signups:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(6n)::before {
+    content: "FTD:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(7n)::before {
+    content: "Depositors:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(8n)::before {
+    content: "Deposits ($):";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(9n)::before {
+    content: "Payout:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(10n)::before {
+    content: "Turnover:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:nth-child(11n)::before {
+    content: "Deal:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .detalis-content table tbody td:hover {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 576px) {
+  .detalis-content table tbody td {
+    padding-left: 50%;
   }
 }
 
@@ -2299,6 +2522,56 @@ body {
 .detalis-content .arrow-color:hover {
   color: #789AB2;
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .table-detalis .table-smaller tbody td:first-of-type::before {
+    content: "Date:";
+    font-size: 14px;
+    color: #A6A6A6;
+    font-weight: bold;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .table-detalis .table-smaller tbody td:nth-child(2n)::before {
+    content: "Amount:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .table-detalis .table-smaller tbody td:nth-child(3n)::before {
+    content: "Deal:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .table-detalis .table-smaller tbody td:nth-child(4n)::before {
+    content: "Account:";
+    font-weight: bold;
+    font-size: 14px;
+    color: #A6A6A6;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+  .table-detalis .table-smaller tbody td:hover {
+    background-color: #ffffff;
+  }
 }
 
 /* Generated by Glyphter (http://www.glyphter.com) on  Tue Aug 01 2017*/

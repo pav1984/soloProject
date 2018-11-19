@@ -160,7 +160,7 @@ header {
         }
     }
 }
-//POP-UP
+//POP-UP-LOGIN
 .bg-modal {
     width: 100%;
     height: 100%;
@@ -177,6 +177,12 @@ header {
         background-color: #ffffff;
         border-radius: 4px;
         position: relative;
+        @include md {
+            width: 500px;
+        }
+        @include sm {
+            width: 280px;
+        }
         h1 {
             font-size: 16px;
             color: $font-color-first;
@@ -190,18 +196,23 @@ header {
         form {
             text-align: center;
             margin-top: 50px;
-            @include sm {
+            position: relative;
+            @include md {
                 margin: 0 auto;
             }
             input[type="text"],
             input[type="password"] {
-              padding: 9px 20px;
-              color:$font-color-first;
+              padding: 9px 40px;
+              color: #000000;
               margin: 0 10px;
               border: none;
               border: 1px solid #e3e3e3;
               border-radius: 4px;
-              @include sm {
+              font-weight: 300;
+              ::placeholder {
+                  color: $font-color-first;
+              }
+              @include md {
                   display: block;
                   margin: 5px auto;
               }
@@ -214,7 +225,7 @@ header {
                     border:none;
                     outline: none;
                     font-weight: 300;
-                    @include sm {
+                    @include md {
                         display: block;
                         margin: 5px auto;
                     }
@@ -222,7 +233,36 @@ header {
                         opacity: 0.9;
                         cursor: pointer;
                     }
-              }         
+              }  
+              .font-icons {
+                   color:$font-color-first;
+                    font-weight: 300;
+                    font-size: 20px;
+                    position: absolute;
+                    
+              }
+              .icon-login {
+                  left: 42px;
+                  top: 7px;
+                  @include md {
+                      left: 132px;
+                  }
+                  @include sm {
+                      left: 22px;
+                  }
+
+              }
+              .icon-password {
+                  left: 312px;
+                  top: 9px;
+                  @include md {
+                      left: 132px;
+                      top: 52px;
+                  }
+                  @include sm {
+                      left: 22px;
+                  }
+              }
         }
     }
     .close {
@@ -238,8 +278,4 @@ header {
             color: $btnColors;
         }
     }
-}
-.font-icons {
-        font-family: 'Font Awesome 5 Free';
-        font-weight: bold;
 }
