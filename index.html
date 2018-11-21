@@ -193,15 +193,10 @@
                     </div>
                 </div>
             </div>
-            <div class="chart">
-                <h2>Earnings Chart</h2>
-                <div class="charts-btn">
-                    <button class="singups-btn btn-statistic"><span class=" singups-dot"></span>Singups</button>
-                    <button class="ftd-btn btn-statistic"><span class=" ftd-dot"></span>FTD</button>
-                    <button class="earned-btn btn-statistic"><span class=" earned-dot"></span>Earned</button>
-                </div>
-                <div class="chart-view">
-                    <img src="images/wykres.png" alt="wykres">
+            <!--CHART-->
+            <div class="chart-view">
+                <div class="container chart-content">
+                <canvas  id="myChart" width="400" height="600"></canvas>
                 </div>
             </div>
         </div>
@@ -278,6 +273,7 @@
             </div>
         </section>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 
