@@ -8,25 +8,22 @@
     overflow-y: auto;
     transition: .5s;
 
+    .side-navigation {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 5px;
+
+    }
+
     @include sm {
         width: 100%;
     }
-
 
     &.side-bar-hidden {
         margin-left: -155px;
 
         @include sm {
             margin-left: -73%;
-        }
-
-        .side-navigation {
-            .nav-side {
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
-                padding-right: 5px;
-            }
         }
 
         +.general-statistic {
@@ -41,10 +38,6 @@
             padding-left: 75px;
         }
 
-        .user-profile {
-            justify-content: space-between;
-            flex-direction: row-reverse;
-        }
 
         @include sm {
             .btn-top-side {
@@ -64,14 +57,15 @@
         }
 
         .side-bar-user {
-            .online-side-bar {
-                padding: 0px 8px 15px 0;
 
-                h3 {
-                    display: none;
-                }
+            h3 {
+                display: none;
             }
         }
+    }
+
+    .online-side-bar {
+        padding: 0px 8px 15px 0;
     }
 }
 
@@ -81,15 +75,19 @@
 
     .logo {
         padding: 23px 0;
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     .hamburger {
         padding: 23px 0;
-        font-size: 23px;
+        font-size: 35px;
         color: $side-bar-font-color;
 
         .fas {
-            margin-left: 75px;
+            margin-left: 30px;
 
             &:hover {
                 color: $btnColors;
@@ -100,12 +98,10 @@
 }
 
 .side-navigation {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
 
     ul {
         list-style: none;
+        width: 100%;
 
         li {
             padding: 15px;
@@ -236,20 +232,6 @@
     border-radius: 50%;
 }
 
-.side-bar-hidden .green-dot {
-    width: 8px;
-    height: 8px;
-    background: #04ae00;
-    position: absolute;
-    top: 46px;
-    left: 238px;
-    border-radius: 50%;
-}
-
-.side-bar-hidden .side-bar-user h1 {
-    margin: 0 auto;
-}
-
 .side-bar-hidden {
     visibility: hidden;
 
@@ -264,6 +246,26 @@
         .fa-bars {
             font-size: 35px;
         }
+    }
+
+    .side-navigation {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        ul {
+            li {
+                .side-icons-bar {
+                    padding-right: 0;
+                    margin-left: 69%;
+                }
+            }
+        }
+    }
+
+    a {
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 
@@ -312,7 +314,8 @@
             color: $btnColors;
         }
     }
-//POP-UP-CHAT
+
+    //POP-UP-CHAT
     h1 {
         font-size: 16px;
         color: $font-color-first;

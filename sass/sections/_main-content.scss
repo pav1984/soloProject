@@ -491,14 +491,10 @@
       }
    .chart-content {
        display: flex;
-       justify-content: center;
-        
+       justify-content: center;   
    }
    
-
 canvas {
-    @include sm {
         height:400px !important;
-    }
     }
 }   
