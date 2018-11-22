@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         padding-right: 5px;
-
+        margin-bottom: 43px;
     }
 
     @include sm {
@@ -64,9 +64,7 @@
         }
     }
 
-    .online-side-bar {
-        padding: 0px 8px 15px 0;
-    }
+    
 }
 
 .header-sidebar {
@@ -137,18 +135,17 @@
 .side-bar-second-part {
 
     .side-bar-user {
-        border-top: 1px solid #fff;
+        border-top: 1px solid #333333;
         position: relative;
 
         h1 {
             font-size: 17px;
             font-weight: 400;
-            margin: 30px;
+            padding: 15px 15px 4px 15px;
         }
 
         .online-side-bar {
-            text-align: center;
-            margin-top: 20px;
+           height: 61px;
 
             &:hover {
                 cursor: pointer;
@@ -191,7 +188,7 @@
 
 .side-bar .btn-top-side {
     display: flex;
-    background: black;
+    background: $side-bar-color;
     color: white;
     height: 61px;
     align-items: center;
@@ -227,8 +224,8 @@
     height: 8px;
     background: #04ae00;
     position: absolute;
-    top: 87px;
-    left: 42px;
+    top: 70px;
+    left: 41px;
     border-radius: 50%;
 }
 
